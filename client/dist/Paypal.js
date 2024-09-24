@@ -165,7 +165,7 @@ async function onApproveCallback(data, actions) {
             // (3) Successful transaction -> Show confirmation or thank you message
             // Or go to another URL:  actions.redirect('thank_you.html');
             resultMessage(
-                `Transaction ${transaction.status}: ${transaction.id}<br><br>See console for all available details`
+                `Transaction ${transaction.status}: ${transaction.id}<br><br>Gracias por su compra`
             );
             console.log(
                 "Capture result",
