@@ -1028,7 +1028,7 @@
                email: email,
                telefono: telefono,
                mensaje: mensaje,
-               fechaYHoraEnvio: fechaYHoraActual // Agregar la hora actual al documento
+               fechaYHoraEnvio: serverTimestamp() // Usa el timestamp del servidor
             });
             console.log("Documento enviado con ID: ", docRef.id);
             window.location.href = "./Agradecimiento.html";
@@ -1059,7 +1059,7 @@
                email: email,
                telefono: telefono,
                mensaje: mensaje,
-               fechaYHoraEnvio: fechaYHoraActual // Guardar fecha y hora en la misma variable
+               fechaYHoraEnvio: serverTimestamp() // Usa el timestamp del servidor
             });
             console.log("Documento enviado con ID: ", docRef.id);
             window.location.href = "./Agradecimiento.html";
